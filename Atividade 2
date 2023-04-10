@@ -1,0 +1,39 @@
+</DOCTYPE html>
+	<html>
+			<head><title>Atividade 2</title></head>
+		<body>
+			<table border="3">
+				<tr align="center">
+				<th colspan="2">Lista de Software</th>
+			</tr>
+				<tr>
+				<th rowspan="4">Sistema Operacional</td>
+				<td>Windows 12</td>
+					<tr>
+				<td>MS-DOS</td>
+			</tr>
+					<tr>
+				<td>Linux</td>
+			</tr>
+					<tr>
+				<td>Unix</td>
+			</tr>
+					<th rowspan="3">Editores de Texto</th>
+				<td>Word</td>
+					<tr>
+				<td>Write</td>
+			</tr>
+					<tr>
+				<td>Edit</td>
+			</tr>
+		<th rowspan="2">Banco de Dados</th>
+				<td>Oracle</td>
+					<tr>
+					<td>SOL Server</td>
+					</tr>
+					
+		
+			</table>
+		</body>
+			
+	</html>
