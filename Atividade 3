@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+	<html>
+		<head><title>Exercicio 3</title>
+			<meta charset="utf-8"/>
+		</head>
+			<body>
+				<table border="3">
+					<tr>
+						<th colspan="7">Provadores de Internet</th>
+					</tr>
+					<tr>
+						<th>Cidade<br/>Provedor</th>
+						<th>Inscrição</th>
+						<th>Taxa<br/>Mensal(R$)</th>
+						<th>Hora<br/>Mês(R$)</th>
+						<th>Hora<br/>Extra(R$)</th>
+						<th>Endereço<br/>na Web</th>
+						<th>Telefone</th>
+					</tr>
+					<tr>	
+					<th colspan="7">CURITIBA</th>
+					</tr>
+					
+					<tr>
+						<th>AlterNex</th>
+						<th>10</th>
+						<th>33</th>
+						<th>Ilimitado</th>
+						<th>-</th>
+						<th>www.alternex.com.br</th>
+						<th>(21)563-2721</th>
+					</tr>
+						<tr>
+							<th>BR Home Shopping</th>
+							<th>Grátis</th>
+							<th>34,90</th>
+							<th>Ilimitado</th>
+							<th>-</th>
+							<th>www.homeshopping.com.br</th>
+							<th>(41)332-5000</th>
+						</tr>
+						<tr>
+							<th>Conex Brasil</th>
+							<th>Grátis</th>
+							<th>34,90</th>
+							<th>Ilimitado</th>
+							<th>-</th>
+							<th>www.conex.com.br</th>
+							<th>(51)222-0777</th>
+						</tr>
+							<tr>
+						<th colspan="7">BRASILIA</th>
+						</tr>
+							<tr>
+						<th>SBT On Line</th>
+						<th>Grátis</th>
+						<th>29,95</th>
+						<th>Ilimitado</th>
+						<th>-</th>
+						<th>www.sol.com.br</th>
+						<th>0800-123800</th>
+							</tr>
+							<tr>
+						<th>TBA</th>
+						<th>30</th>
+						<th>35</th>
+						<th>Ilimatado</th>
+						<th>-</th>
+						<th>www.iba.com.br</th>
+						<th>0800-610900</th>
+							</tr>
+							<tr>
+						<th>Universo Online</th>
+						<th>Grátis</th>
+						<th>35</th>
+						<th>Ilimitado</th>
+						<th>-</th>
+						<th>www.uol.com.br</th>
+						<th>0800-155757</th>
+							</tr>
+						
+						
+					
+				</table>
+			</body>
+	</html>
