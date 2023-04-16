@@ -7,12 +7,36 @@
 	<body>
 		<table border="1" width="100%" height="650">
 			<tr>
-				<th colspan="4">Insira um banner - Título</th>
+				<th colspan="6"> <img alt="texto se a imagem não aparecer" src="file:///C:/Users/arthu/OneDrive/Documentos/Lightshot/logocachorro.png" width="1300" height="150" />
+				 </th
 			</tr>
 			<tr>
-				<th rowspan="4">Insira tres links</th>	
-					<th align="center" width="85%" height="80%">Insira um texto</th>
-			</tr>
+				<th valign="top" rowspan="4">Videos mais recentes do Cachorro1337
+				
+						<a href="https://youtu.be/cARSeTXR4NE" title="Video 1">
+							<img alt="Texto se a imagem não aparecer" src="file:///C:/Users/arthu/OneDrive/Documentos/Lightshot/thumb1.png" width="160" height="150"/>
+							</a>	
+				
+						
+						<a href="https://youtu.be/BKaW_6jfPeE" title="Video 2">
+							<img alt="Texto se a imagem não aparecer" src="file:///C:/Users/arthu/OneDrive/Documentos/Lightshot/thumb2.png" width="160" height="150"/>
+							</a>
+					
+				
+						<a href="https://youtu.be/F9Pcgou-R5w" title="Video 3">
+							<img alt="Texto se a imagem não aparecer" src="file:///C:/Users/arthu/OneDrive/Documentos/Lightshot/thumb3.png" width="160" height="150"/>
+							</a>
+						</th>
+				</tr>	
+				
+		<tr>	
+					
+					<th align="top" width="85%" height="85%">FAN CLUB OFICIAL DO CACHORRO1337 
+						<img alt="texto se a imagem não aparecer" src="file:///C:/Users/arthu/OneDrive/Documentos/Lightshot/cachorrosafado.png" width="1000" height="300 "border="5" style="border:5px
+solid #800080"/>
+						</th>
+					</tr>
+			
 		</table>
 	</body>
 
