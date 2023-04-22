@@ -1,0 +1,64 @@
+	<!DOCTYPE html>
+	<html>
+			<head>
+				<meta charset="utf-8"/>
+				<title>contato</title>
+			</head>
+				<body>
+					<header>
+						
+
+	<table border="1" width="100%" height="100">
+				<th colspan="6" "border="5" style="border:5px #0000FF"/>Vendas de carros</th>
+			</table>
+				</header>
+			<h3	bgcolor="blue"> Os Melhores carros de BsB</h3>
+			<h1>Venha nos conhecer</h1>
+
+		<table bordercolor="blue" border="3">
+						<tr>
+							<th>Horários para atendimentos</th>
+					
+					</tr>
+							<tr>
+								<td>8:00 as 22:00</td>
+						
+					</tr>
+						</table>
+					<table bordercolor="blue" border="3">
+						<tr>
+							<th>Email de contato</th>
+					</tr>
+						<tr>
+							<td>vendasdecarros@contato.com</td>
+						</table>
+					</tr>
+								</table>
+							<table bordercolor="blue" border="3">
+						<tr>
+							<th colspan="2">Perguntas Frequentes</th>
+						</tr>
+								<tr>
+									<td>Vocês são confiaveis?</td>
+									<th>Sim. Atenciosamente, Venda de carros</th>
+									
+								</tr>
+									<tr>
+										<td>Como são os carros que voces vendem?</td>
+										<th>Atualmente trabalhamos com SEMINOVOS e USADOS. Atenciosamente, Venda de carros</th>
+									</tr>
+									<tr>
+										<td>Como funciona o financiamento dos carros</td>
+										<th>Nos conversamos sobre isso na hora da escolha do modelo e com base na sua renda. Atenciosamente,Venda de carros</th>
+									</tr>
+									<tr>
+										<td>Vocês tem HB20 aí?</td>
+										<th>Sim. Atenciosamente,Venda de carros</th>
+									<tr>
+										<td>Tambêm fazem pinturas de carros?</th>
+										<th>Sim, fazemos a pintura do carro ainda antes de entrega-lo. Atenciosamente, Venda de carros</th>
+						</table>
+							
+	</body>
+				
+	</html>
