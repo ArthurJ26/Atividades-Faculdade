@@ -1,0 +1,52 @@
+create schema exercicioaula2 default character set utf8;
+use exercicioaula2;
+drop schema exercicioaula2;
+
+create table if not exists Estudantes(
+	id integer not null,
+    nome varchar(255) not null,
+    email varchar(255) not null,
+    telefone varchar(18),
+    altura decimal(3,2),
+    aprovado tinyint(1),
+    primary key (id)
+) engine = innoDB;
+
+insert into Estudantes values 
+(1, 'joão Pimentel','jp@gmail.com','(61) 99823-4163', 1.90,1),
+(2, 'joão Pedro','jotap@gmail.com','(61) 99873-4193', 1.74,0),
+(3, 'joão Paulo','jaopaulo@gmail.com','(61) 99323-4823', 1.69,1),
+(4, 'joão Pessoa','jpaulin@gmail.com','(61) 95923-4763', 1.60,0),
+(5, 'joão Puskas','jpaulao@gmail.com','(61) 99923-4213', 1.84,0);
+
+select * from Estudantes;
+select AVG(altura) from Estudantes where aprovado = 0;
+
+drop database subconsulta;
+create schema if not exists subconsulta default character set utf8;
+use subconsulta;
+
+
+create table if not exists subconsulta.Aluno(
+id integer not null,
+nome varchar(100) not null,
+email varchar(100) not null,
+dataNascimento datetime,
+primary key(id)
+)Engine = InnoDB;
+
+create table if not exists subconsulta.turma(
+id integer not null,
+inicio datetime,
+fim datetime,
+observacoes longtext,
+primary key(id)
+)Engine = InnoDB;
+
+create table if not exists subconsulta.AlunoTurma(
+aluno_id integer not null,
+turma_id integer not null,
+primary key (aluno_id, turma_id),
+foreign key (aluno_id) references Aluno(id),
+foreign key (aluno_id) references Turma(id)
+) Engine = InnoDB;
