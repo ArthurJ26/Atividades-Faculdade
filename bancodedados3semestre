@@ -23,6 +23,7 @@ select * from Estudantes;
 select AVG(altura) from Estudantes where aprovado = 0;
 
 drop database subconsulta;
+
 create schema if not exists subconsulta default character set utf8;
 use subconsulta;
 
@@ -31,7 +32,7 @@ create table if not exists subconsulta.Aluno(
 id integer not null,
 nome varchar(100) not null,
 email varchar(100) not null,
-dataNascimento datetime,
+dataNascimento date,
 primary key(id)
 )Engine = InnoDB;
 
@@ -50,3 +51,45 @@ primary key (aluno_id, turma_id),
 foreign key (aluno_id) references Aluno(id),
 foreign key (aluno_id) references Turma(id)
 ) Engine = InnoDB;
+
+create table if not exists subconsulta.Nota (
+	id int not null,
+    aluno_id int,
+    turma_id int,
+    nota decimal(4,2),
+    primary key (id),
+    foreign key (aluno_id) references Aluno(id),
+	foreign key (turma_id) references Turma(id)
+) Engine = InnoDB;
+
+insert into Aluno values 
+(1, 'joão Pimentel','jp@gmail.com','2005-06-17'),
+(2, 'joão Pedro','jotap@gmail.com','2004-08-19'),
+(3, 'joão Paulo','jaopaulo@gmail.com','2003-09-21'),
+(4, 'joão Pessoa','jpaulin@gmail.com','2002-05-22'),
+(5, 'joão Puskas','jpaulao@gmail.com','2001-04-24');
+
+select * from Aluno;
+
+insert into turma values
+(1,'2019-03-01','2019-07-15','Turma de Banco de Dados I'),
+(2,'2019-04-01','2019-07-22','Turma de Banco de Dados II');
+
+select * from turma;
+
+insert into AlunoTurma values (1,1);
+insert into AlunoTurma values (2,1);
+insert into AlunoTurma values (2,2);
+
+select * from AlunoTurma;
+
+insert into Nota values (1,1,1,10);
+insert into Nota values (2,2,2,8);
+insert into Nota values (3,3,2,5);
+insert into Nota values (4,4,1,9);
+
+select * from Nota;
+
+select * from Nota as n1 where n1.nota > (select AVG(n2.nota) from Nota as n2 where n2.turma_id = n1.turma_id);
+
+select n1.*, (select MAX(n2.nota) from Nota as n2 where n2.turma_id = 1) as maior_nota from Nota as n1 where n1.turma_id;
