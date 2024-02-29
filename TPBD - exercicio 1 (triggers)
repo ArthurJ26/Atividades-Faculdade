@@ -23,6 +23,66 @@ create table if not exists bd_aula_triggers.Matricula(
     primary key (cod)
 )engine = innoDB;
 
+create table if not exists bd_aula_triggers.Alunos_Auditoria(
+	id int not null auto_increment,
+    cod int not null,
+    nome varchar(100) not null,
+    modificado_em datetime default null,
+    acao varchar (50) default null,
+    primary key(id)
+) engine = innoDB;
+
+create table if not exists bd_aula_triggers.Curso_Auditoria(
+	id int not null auto_increment,
+    cod int not null,
+    modificado_em datetime default null,
+    acao varchar (50) default null,
+    descricao varchar (200),
+    primary key(id)
+) engine = innoDB;
+
+drop table curso_auditoria;
+
+insert into Curso values (null, "CIÊNCIA DA COMPUTAÇÃO");
+insert into Curso values (null, "TECNOLOGIA EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS");
+insert into Curso values (null, "ENGENHARIA DA COMPUTAÇÃO");
+insert into Curso values (null, "SISTEMAS DE INFORMAÇÃO");
+
+select * from curso;
+
+set delimiter $$
+
+create trigger antesDeUpdate before update on Aluno
+	for each row begin	
+				insert into Alunos_Auditoria set acao = 'update',
+                cod = OLD.cod,
+                nome = OLD.nome,
+                modificado_em = now();
+                end$$
+                
+               create trigger antesDeUpdateCurso before update on Curso
+	for each row begin	
+				insert into Curso_Auditoria set acao = 'update',
+                cod = OLD.cod,
+                descricao = OLD.descricao,
+                modificado_em = now();
+                end$$ 
+                
+set delimiter ;
+
+insert into Aluno values (null, "JP", 2, 1);
+update Aluno set nome = "José da Silva Pimentel" where cod = 1;
+
+select * from Aluno;
+select * from Alunos_Auditoria;
+
+update Curso set descricao = " o curso mais brabo do mundo" where cod = 4;
+
+select * from Curso_Auditoria;
+select * from Curso;
+
+show triggers;
+drop trigger antesDeUpdateCurso;
 
 
 insert into Curso values (null, "CIÊNCIA DA COMPUTAÇÃO");
