@@ -1,0 +1,92 @@
+header {
+    position: fixed;
+    width: 100%;
+    padding: 40px 0;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    z-index: 1;
+    background: var(--color-black);
+}
+
+header.rolagem {
+    opacity: 0.2;
+}
+
+header.rolagem:hover {
+    opacity: 1;
+}
+
+main {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.serviços {
+    margin-top: 200px;
+    width: 80%;
+    background-color: var(--color-primary);
+    text-align: center;
+    display: block;
+    justify-content: center;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+
+/* SLIDES */
+
+.cardapio {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagens {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    aspect-ratio: 0.7075;
+}
+
+.slider, .slider1, .slider2, .slider3, .slider4, .slider5 {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .2s;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.slider5:nth-child(1) {
+    height: 707px;
+}
+
+.on {
+    opacity: 1;
+}
+
+#prev-button, #next-button, #next-button1, #prev-button1, #next-button2, #prev-button2, #next-button3, #prev-button3, #next-button4, #prev-button4, #next-button5, #prev-button5 {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#prev-button img, #next-button img, #next-button1 img, #prev-button1 img, #next-button2 img, #prev-button2 img, #next-button3 img, #prev-button3 img, #next-button4 img, #prev-button4 img, #next-button5 img, #prev-button5 img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 425px) {
+    .slider5:nth-child(1) {
+        height: 402px;
+    }
+}
